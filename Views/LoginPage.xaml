@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BikeStoreApp.Views.LoginPage"
+             Title="Login Page">
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="50">
+        <Image Source="dotnet_bot.png" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HeightRequest="100" />
+        <!-- Entrada de correo electrónico con margen inferior -->
+        <Entry Placeholder="Correo electrónico" Keyboard="Email" Margin="0,0,0,10" />
+
+        <!-- Entrada de contraseña con margen inferior -->
+        <Entry Placeholder="Contraseña" IsPassword="True" Margin="0,0,0,20" />
+        <Button Text="Iniciar sesión" Command="{Binding LoginCommand}" />
+    </StackLayout>
+</ContentPage>
