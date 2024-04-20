@@ -1,8 +1,8 @@
 namespace BikeStoreApp.Views;
 
-public partial class HomePage : ContentPage
+public partial class BikesPage : ContentPage
 {
-	public HomePage()
+	public BikesPage()
 	{
 		InitializeComponent();
         NavigationPage.SetHasNavigationBar(this, false); // Ocultar la barra de navegación

@@ -11,7 +11,7 @@ public partial class LoginPage : ContentPage
     public LoginPage()
     {
         InitializeComponent();
-        
+        NavigationPage.SetHasNavigationBar(this, false); // Ocultar la barra de navegación
         LoginCommand = new Command(OnLoginButtonClicked);
         BindingContext = this;
     }

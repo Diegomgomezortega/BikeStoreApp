@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MauiIcons.Fluent;
+using Microsoft.Extensions.Logging;
 
 namespace BikeStoreApp
 {
@@ -13,7 +14,9 @@ namespace BikeStoreApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                });
+                })
+            // Initialises the .Net Maui Icons - Fluent
+            .UseFluentMauiIcons();
 
 #if DEBUG
     		builder.Logging.AddDebug();
